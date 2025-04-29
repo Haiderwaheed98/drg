@@ -1,0 +1,188 @@
+ <div class="our-portfolio" id="portfolio-section">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-7">
+                    <!-- Section Title Start -->
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">portfolio</h3>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Building solutions with innovative <span>design & technology.</span></h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+
+                <div class="col-lg-5">
+                    <!-- Section Title Content Start -->
+                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
+                        <p>Empowering projects through innovative engineering solutions, advanced design, and tailored strategies that drive growth and excellence.</p>
+                    </div>
+                    <!-- Section Title Content End -->          
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+					<!-- Choose Our Project Nav start -->
+					<div class="our-Project-nav wow fadeInUp" data-wow-delay="0.25s">
+						<ul>
+							<li><a href="#" class="active-btn" data-filter="*">all</a></li>
+							<li><a href="#" data-filter=".branding">Branding & Identity</a></li>
+							<li><a href="#" data-filter=".web">Web Design</a></li>
+							<li><a href="#" data-filter=".digital">Digital Marketing</a></li>
+							<li><a href="#" data-filter=".analytics">SEO & Analytics</a></li>
+						</ul>
+					</div>
+					<!-- Choose Our Project Nav End -->
+				</div>
+
+                <div class="col-lg-12">
+                    <!-- Project Item Boxes start -->
+					<div class="row project-item-boxes align-items-center">
+						<div class="col-lg-4 col-md-6 project-item-box branding web analytics">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-1.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">web design</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>Dynamic E-commerce Platform</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item-box web digital urban">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-2.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">digital marketing</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>innovative identity design</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item-box digital analytics">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-3.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">SEO & analytics</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>dynamic digital campaign</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item-box branding analytics">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-4.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">branding & identity</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>impactful content creation</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item-box web service branding">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-5.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">web design</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>innovative identity design</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 project-item-box digital">
+                            <!-- Project Item Start -->
+                            <div class="project-item wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="project-image">
+                                    <figure class="image-anime">
+                                        <img src="images/project-6.jpg" alt="">
+                                    </figure>
+
+                                    <div class="project-tag">
+                                        <a href="project-single.html">branding & identity</a>
+                                    </div>   
+
+                                    <div class="project-btn">
+                                        <a href="project-single.html"><img src="images/arrow-white.svg" alt=""></a>
+                                    </div>
+                                </div>                                                           
+                                
+                                <div class="project-content">
+                                    <h3>interactive website redesign</h3>
+                                </div>
+                            </div>
+                            <!-- Project Item End -->
+                        </div>
+                    </div>
+                    <!-- Project Item Boxes End -->
+                </div>
+            </div>
+        </div>
+    </div>
