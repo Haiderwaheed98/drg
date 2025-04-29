@@ -1082,6 +1082,7 @@ body:has(.offcanvas){
 	user-select: none;
 	gap: var(--gap);
 	align-items: center;
+	padding-top: 35px;
 }
 
 .scrolling-content{
@@ -8397,4 +8398,81 @@ html {
 /* Add padding to account for fixed header */
 #blog-section {
     scroll-margin-top: 100px;
+}
+
+/* Custom Logo Styling */
+.custom-logo {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-logo .header-logo {
+    width: auto;
+    height: 60px; /* Adjust this value based on your desired logo height */
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+/* Logo size adjustment when header is sticky */
+.header-sticky.is-sticky .custom-logo .header-logo {
+    height: 50px; /* Slightly smaller when header is sticky */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991px) {
+    .custom-logo .header-logo {
+        height: 50px;
+    }
+    
+    .header-sticky.is-sticky .custom-logo .header-logo {
+        height: 45px;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-logo .header-logo {
+        height: 45px;
+    }
+    
+    .header-sticky.is-sticky .custom-logo .header-logo {
+        height: 40px;
+    }
+}
+
+/* Logo hover effect (optional) */
+.custom-logo:hover .header-logo {
+    transform: scale(1.05);
+}
+
+/* Ensure logo quality */
+.custom-logo .header-logo {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Form Response Message Styles */
+.form-response {
+    display: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-response.success {
+    display: block;
+    background: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+    border: 1px solid rgba(40, 167, 69, 0.2);
+}
+
+.form-response.error {
+    display: block;
+    background: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+    border: 1px solid rgba(220, 53, 69, 0.2);
 }
