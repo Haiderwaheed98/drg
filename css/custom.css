@@ -1483,7 +1483,7 @@ body:has(.offcanvas){
 
 .why-choose-image figure{
 	display: block;
-	border-radius: 30px;
+	border-radius: 100px;
 	overflow: hidden;
 }
 
@@ -8571,4 +8571,25 @@ html {
         padding: 7px 12px;
         font-size: 14px;
     }
+}
+
+/* Fix Arabic H1 text to display horizontally */
+body[dir="rtl"] h1,
+html[lang="ar"] h1 {
+  writing-mode: initial !important;
+  direction: rtl !important;
+  display: block !important;
+  text-align: right !important;
+  /* Remove any flex or column styles */
+  flex-direction: initial !important;
+  white-space: normal !important;
+}
+
+body[dir="rtl"] .hero-title {
+  writing-mode: initial !important;
+  direction: rtl !important;
+  display: block !important;
+  text-align: right !important;
+  flex-direction: initial !important;
+  white-space: normal !important;
 }
