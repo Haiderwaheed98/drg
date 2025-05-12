@@ -2419,6 +2419,7 @@ body:has(.offcanvas){
     color: var(--primary-color);
 }
 
+
 .testimonial-benefits-content ul li:last-child{
 	margin-bottom: 0
 }
@@ -8593,3 +8594,133 @@ body[dir="rtl"] .hero-title {
   flex-direction: initial !important;
   white-space: normal !important;
 }
+
+.static-services {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.static-services .service-item {
+    position: relative;
+	background: url('../images/service-bg.svg') no-repeat;
+	background-position: top left;
+	background-size: auto;
+	border: 1px solid var(--divider-color);
+	border-radius: 30px;
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	padding: 40px;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+
+}
+
+.static-services .service-item:hover {
+    transform: translateY(-5px);
+}
+
+.static-services .service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.static-services .service-image {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.static-services .service-info {
+    width: 100%;
+}
+
+.static-services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.static-services .service-item {
+    position: relative;
+	background: url('../images/service-bg.svg') no-repeat;
+	background-position: top left;
+	background-size: auto;
+	border: 1px solid var(--divider-color);
+	border-radius: 30px;
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	padding: 40px;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+}
+
+.static-services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(5, 87, 18);
+}
+
+.static-services .service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.static-services .service-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.static-services .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.static-services .service-info {
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.static-services .service-info h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbb7b7;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .static-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .static-services .service-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
