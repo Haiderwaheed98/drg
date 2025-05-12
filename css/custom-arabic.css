@@ -350,10 +350,10 @@ body{
 .section-title h3{
 	display: inline-block;
 	position: relative;
-	font-size: 20px;
+	font-size: 14px;
     font-weight: 600;
 	line-height: normal;
-	/* letter-spacing: 0.2em; */
+	letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--primary-color);
 	padding-left: 24px;
@@ -2296,7 +2296,6 @@ body:has(.offcanvas){
 	background: var(--secondary-color);
 	border-radius: 14px;
 	transition: all 0.4s ease-in-out;
-    right:645px
 }
 
 .testimonial-slider .testimonial-button-next{
@@ -2419,6 +2418,7 @@ body:has(.offcanvas){
     font-size: 16px;
     color: var(--primary-color);
 }
+
 
 .testimonial-benefits-content ul li:last-child{
 	margin-bottom: 0
@@ -2837,16 +2837,15 @@ body:has(.offcanvas){
 }
 
 .footer-social-links ul{
-	 display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .footer-social-links ul li{
-	margin: 0;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 15px;
 }
 
 .footer-social-links ul li:last-child{
@@ -8112,15 +8111,12 @@ textarea.form-control {
 /* Input Icon Styling */
 .input-icon {
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     color: var(--accent-color);
     opacity: 0.5;
     transition: all 0.3s ease;
-    right: auto;
-    
-
 }
 
 .form-control:focus + .input-icon {
@@ -8519,7 +8515,7 @@ html {
     border-radius: 30px;
     padding: 7px 25px;
     font-weight: 600;
-    colorleftr(--dark-color);
+    color: var(--dark-color);
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
     text-decoration: none;
@@ -8589,6 +8585,7 @@ html[lang="ar"] h1 {
   flex-direction: initial !important;
   white-space: normal !important;
 }
+
 body[dir="rtl"] .hero-title {
   writing-mode: initial !important;
   direction: rtl !important;
@@ -8598,46 +8595,130 @@ body[dir="rtl"] .hero-title {
   white-space: normal !important;
 }
 
-.form-group {
-    text-align: center;
-}
-
-.btn-submit {
-    display: block;
-    margin: 0 auto; /* Centers the button */
-    padding: 10px 20px; /* Optional: adds some padding */
-    background-color: #BFF747; /* Optional: matches your theme */
-    color: #222; /* Optional: text color */
-    border: none;
-    border-radius: 5px; /* Optional: rounded corners */
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease; /* Optional: smooth hover effect */
-}
-
-.btn-submit:hover {
-    background-color: #aee62e; /* Optional: darker shade on hover */
-}
-
-.whatsapp-button {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    background-color: #25D366;
-    color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+.static-services {
+    
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-    z-index: 1000;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
-.whatsapp-button:hover {
-    background-color: #128C7E;
+.static-services .service-item {
+    position: relative;
+	background: url('../images/service-bg.svg') no-repeat;
+	background-position: top left;
+	background-size: auto;
+	border: 1px solid var(--divider-color);
+	border-radius: 30px;
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	padding: 40px;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+
+}
+
+.static-services .service-item:hover {
+    transform: translateY(-5px);
+}
+
+.static-services .service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.static-services .service-image {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.static-services .service-info {
+    width: 100%;
+}
+
+.static-services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.static-services .service-item {
+    position: relative;
+	background: url('../images/service-bg.svg') no-repeat;
+	background-position: top left;
+	background-size: auto;
+	border: 1px solid var(--divider-color);
+	border-radius: 30px;
+	backdrop-filter: blur(100px);
+	-webkit-backdrop-filter: blur(100px);
+	height: calc(100% - 30px);
+	margin-bottom: 30px;
+	padding: 40px;
+	transition: all 0.4s ease-in-out;
+	overflow: hidden;
+}
+
+.static-services .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(5, 87, 18);
+}
+
+.static-services .service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.static-services .service-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.static-services .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.static-services .service-info {
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.static-services .service-info h3 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #bbb7b7;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .static-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .static-services .service-item {
+        width: 100%;
+        max-width: 300px;
+    }
 }
